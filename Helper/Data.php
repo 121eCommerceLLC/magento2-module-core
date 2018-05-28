@@ -1,16 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fsspencer
- * Date: 6/22/17
- * Time: 9:05 PM
- */
-
 namespace Ecommerce121\Core\Helper;
 
-
+/**
+ * Class Data
+ * @package Ecommerce121\Core\Helper
+ */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
+    /**
+     * Data constructor.
+     * @param \Magento\Framework\App\Helper\Context $context
+     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
+     */
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Store\Model\StoreManagerInterface $storeManager
@@ -20,6 +21,10 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         parent::__construct($context);
     }
 
+    /**
+     * @param $path
+     * @return mixed
+     */
     public function getConfig($path)
     {
         return $this->scopeConfig->getValue($path);
