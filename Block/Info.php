@@ -2,13 +2,14 @@
 namespace Ecommerce121\Core\Block;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
+use Magento\Framework\Data\Form\Element\Renderer\RendererInterface;
+use Magento\Backend\Block\AbstractBlock;
 
 /**
  * Class Info
  * @package Ecommerce121\Core\Block
  */
-class Info extends \Magento\Backend\Block\AbstractBlock implements
-    \Magento\Framework\Data\Form\Element\Renderer\RendererInterface
+class Info extends AbstractBlock implements RendererInterface
 {
     /**
      * @param AbstractElement $element
