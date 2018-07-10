@@ -6,7 +6,8 @@
  * @package Ecommerce121_Core
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
     <system>
         <tab id="ecommerce121_extensions" translate="label" sortOrder="10" >
             <label><![CDATA[<span class="ecommerce121-logo">121Ecommerce</span>]]></label>

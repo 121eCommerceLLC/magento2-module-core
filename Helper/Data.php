@@ -1,23 +1,21 @@
 <?php
 namespace Ecommerce121\Core\Helper;
 
+use Magento\Framework\App\Helper\AbstractHelper;
+use Magento\Framework\App\Helper\Context;
+
 /**
  * Class Data
  * @package Ecommerce121\Core\Helper
  */
-class Data extends \Magento\Framework\App\Helper\AbstractHelper
+class Data extends AbstractHelper
 {
     /**
      * Data constructor.
      * @param \Magento\Framework\App\Helper\Context $context
-     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
      */
-    public function __construct(
-        \Magento\Framework\App\Helper\Context $context,
-        \Magento\Store\Model\StoreManagerInterface $storeManager
-    )
+    public function __construct(Context $context)
     {
-        $this->storeManager = $storeManager;
         parent::__construct($context);
     }
 
@@ -29,5 +27,4 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     {
         return $this->scopeConfig->getValue($path);
     }
-
 }
