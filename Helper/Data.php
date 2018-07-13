@@ -11,15 +11,6 @@ use Magento\Framework\App\Helper\Context;
 class Data extends AbstractHelper
 {
     /**
-     * Data constructor.
-     * @param \Magento\Framework\App\Helper\Context $context
-     */
-    public function __construct(Context $context)
-    {
-        parent::__construct($context);
-    }
-
-    /**
      * @param $path
      * @return mixed
      */
