@@ -2,8 +2,7 @@
     "name": "ecommerce121/magento2-module-core",
     "description": "N/A",
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
-        "magento/framework": "101.0.*"
+        "magento/framework": "^101"
     },
     "type": "magento2-module",
     "version": "1.0.3",
