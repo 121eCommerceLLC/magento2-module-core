@@ -16,8 +16,8 @@ Follow this steps:
 1. After downloading the extension, unzip to a local directory.
 2. Copy the extension folder onto your app/code magento directory.
 3. Run commands:
-   3. bin/magento module:enable Ecommerce121_PersistentLayeredNav
-   3. bin/magento setup:upgrade
+   3.1. bin/magento module:enable Ecommerce121_Core
+   3.2. bin/magento setup:upgrade
     
 Support
 - 
